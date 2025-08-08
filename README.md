@@ -50,6 +50,9 @@ stringData:
     }
 ```
 
+```sh
+kubectl apply -f argo-cd-self-manage/apps/
+```
 
 
 ## Help

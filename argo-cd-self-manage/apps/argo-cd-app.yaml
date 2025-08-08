@@ -8,10 +8,14 @@ spec:
   source:
     repoURL: https://github.com/amine250/k8s-gitops-bootstrap
     targetRevision: main
-    path: argo-cd-self-manage/helm
+    path: argo-cd-self-manage
     helm:
+      releaseName: argocd
       valueFiles:
         - values.yaml
+    chart: argo-cd
+    repoURL: https://argoproj.github.io/argo-helm
+    targetRevision: 8.2.5
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

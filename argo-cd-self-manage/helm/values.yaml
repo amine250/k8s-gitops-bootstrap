@@ -1,0 +1,10 @@
+server:
+  service:
+    type: NodePort
+    nodePortHttp: 30080
+    nodePortHttps: 30443
+  insecure: true
+
+configs:
+  secret:
+    argocdServerAdminPassword: "$2a$12$jsp1ERezNp3vtIlaUX6Cmu8mKz5jJKKBjuuImKeJN/liMUxmiUxcS" # bcrypt hash of 'admin'

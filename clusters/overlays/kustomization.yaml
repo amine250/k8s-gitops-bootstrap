@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
  - workload-cluster-1
  - workload-cluster-2
+namespace: argocd

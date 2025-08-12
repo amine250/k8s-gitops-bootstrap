@@ -5,11 +5,8 @@ resources:
 
 patches:
   - target:
-      group: ""
-      version: v1
       kind: Secret
       name: cluster-secret
-      namespace: argocd
     patch: |-
       - op: replace
         path: /metadata/name

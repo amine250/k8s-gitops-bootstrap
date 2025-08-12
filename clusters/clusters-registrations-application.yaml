@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/amine250/k8s-gitops-bootstrap
     targetRevision: main
-    path: clusters
+    path: clusters/overlays
     kustomize:
       commonLabels:
         app.kubernetes.io/managed-by: argocd
